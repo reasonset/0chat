@@ -13,14 +13,14 @@
   <script>
     var onBottom = false
     function takeoffFromBottom() {
-      if (window.innerHeight - document.getElementById("lastmsg").getBoundingClientRect().y > 0) {
+      if (window.innerHeight - document.getElementById("lastmsg").getBoundingClientRect().y > -20) {
         onBottom = true
       } else {
         onBottom = false
       }
     }
 
-    id = window.setTimeout((function() {
+    window.setTimeout((function() {
       window.location.reload(true)
       if (onBottom) { document.getElementById("lastmsg").scrollIntoView(true) }
     }), 10000 )
