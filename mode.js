@@ -16,7 +16,7 @@ function changename(name) {
   if (registeredName) {
     form.chat.value = registeredName + " changes name to " + name + "."
   } else {
-    form.chat.value = name + " logged in."
+    form.chat.value = name + " logged in. (" + window.navigator.userAgent + ")"
   }
   form.submit()
   form.chat.value = ""
