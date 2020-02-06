@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="skin.css" />
+    <meta http-equiv="refresh" content="10;URL=chat.html">
+  </head>
+  <body>
+<% chat.each do |i| %>
+    <section class="chatbox">
+      <div class="chatter_name"><%= i[:name] %> <span class="timestamp"><%= i[:timestamp] %></span></div>
+      <div class="chat_text"><%= i[:chat] %></div>
+    </section>
+<% end %>
+    <aside>
+      <p><a href="https://github.com/reasonset/0chat">"0chat"</a> This script presented by Masaki Haruka. Only for demonstration.</p>
+    </aside>
+  </body>
+</html>

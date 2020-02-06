@@ -1,0 +1,16 @@
+.chatter_name {
+  background-color: #c1cae9;
+  font-size: 70%;
+  margin: 0px;
+}
+
+.chat_text {
+  margin: 2px 0px;
+  line-height: 1.2;
+}
+
+.timestamp {
+  font-size: 50%;
+  color: #999;
+  padding-left: 3em;
+}
