@@ -9,6 +9,7 @@
       <section>
         <button onclick="changemode(0)">Change Name</button>
       </section>
+      <input type="text" size="16" style="border: none;font-size: 120%; font-style: italic;" id="NameView" />
       <form action="chat.cgi" method="POST" name="chatform" onsubmit="this.submit(); this.chat.value = ''; return false">
         <input type="hidden" name="name" /><br />
         <input type="text" name="chat" size="64" />
